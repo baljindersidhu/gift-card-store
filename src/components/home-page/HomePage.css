@@ -1,0 +1,240 @@
+.PageHeader{
+    padding: 10vh 10vw 6vh 10vw;
+}
+
+.PageHeader .heading{
+    font-weight: bold;
+    font-size: 3.5vh;
+    text-shadow: 0px 0px 5px #ddd;
+}
+
+.PageHeader i{
+    font-size: 2.25vh;
+    color: var(--app-grey-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CardGallery{
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.CardGallery .heading{
+    width: 34vw;
+    color: var(--app-grey-color);
+    font-size: 1.7vh;
+    font-weight: 600;
+    margin-left: -4vw;
+    margin-right: -9vw;
+    transform: rotateZ(-90deg);
+}
+
+.CardGallery .Card{
+    height: 20vh;
+    padding: 2vh 0vw;
+    margin: 0vh 2vw;
+    width: 17vw;
+    border-radius: 1.25vh;
+    color: white;
+    box-shadow: 0px 15px 11px -8px #ddd;
+    overflow: hidden;
+}
+
+.CardGallery .Card:nth-child(2){
+    background-color: var(--app-apple-gif-card-bg);
+}
+
+.CardGallery .Card:nth-child(3){
+    background-color: var(--app-netflix-gif-card-bg);
+}
+
+.CardGallery .Card:nth-child(4){
+    background-color: var(--app-amazon-gif-card-bg);
+}
+
+.CardGallery .Card:nth-child(5){
+    background-color: var(--app-placeholder-gif-card-bg);
+}
+
+.CardGallery .Card i{
+    font-size: 2.7vh;
+    height: 10vh;
+}
+
+.CardGallery .Card i.ri-amazon-fill{
+    font-size: 3.2vh;
+}
+
+.CardGallery .Card .label{
+    transform: rotateZ(-90deg);
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #aba8a8;
+}
+
+.CardGallery .Card .price{
+    margin-top: 5vh;
+    font-size: 1.3vh;
+    opacity: 0.6;
+}
+
+.CardGallery .Card .price::before{
+    content: '';
+    position: absolute;
+    top: -1vh;
+    width: 6.5vw;
+    height: 0.2vh;
+    background: white;
+    opacity: 0.35;
+}
+
+.CardGallery .navigator{
+    padding: 5vh 0vw;
+    padding-left: 25vw;
+}
+
+.CardGallery .navigator .separator{
+    width: 41vw;
+    height: 0.1vh;
+    margin-right: 4vw;
+    background-color: #e6e7ee91;
+}
+
+.CardGallery .navigator i{
+    margin: 0vh 4vw;
+}
+
+.CardGallery .navigator i:nth-child(2){
+    color: var(--app-light-grey-color);
+}
+
+.CardGallery .navigator i:nth-child(3){
+    color: var(--app-grey-color);
+}
+
+@keyframes fade-in{
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SidenavActions{
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: 1.5vh;
+}
+
+.SidenavActions .action{
+    width: 8vw;
+    height: 4vh;
+    margin: 5vh 0vw;
+    font-size: 2.5vh;
+    color: var(--app-grey-color);
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.SidenavActions .action i{
+    position: relative;
+}
+
+.SidenavActions .action[data-active="true"]{
+    color: var(--app-theme-cololr);
+}
+
+.SidenavActions .action[data-active="true"]::before{
+    content: '';
+    position: absolute;
+    height: 6vh;
+    width: 12vw;
+    border-radius: 50%;
+    background-color: #fae7e9;
+    top: -1.7vh;
+    left: -3.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.BestSellerCard{
+    overflow: hidden;
+    padding-bottom: 4vh;
+}
+
+.BestSellerCard .heading{
+    font-weight: 600;
+    padding-left: 32vw;
+    text-shadow: 0px 0px 5px #bfbdbd;
+}
+
+.BestSellerCard .Card{
+    margin-left: 32vw;
+    margin-top: 3vh;
+    padding: 3.5vh 9vw;
+    color: white;
+    background-color: var(--app-netflix-gif-card-bg);
+    width: 60vw;
+    border-radius: 1.25vh;
+    animation: fade-in 1.5s ease-in-out;
+    box-shadow: 7px 12px 20px #d10e162e;
+}
+
+.BestSellerCard .Card .headerIcon{
+    font-size: 3vh;
+    margin-left: -1vw;
+}
+
+.BestSellerCard .Card .label{
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #aba8a8;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+}
+
+.BestSellerCard .Card .price{
+    opacity: 0.6;
+    font-size: 1.45vh;
+}
+
+.BestSellerCard .Card .price::before{
+    content: '';
+    position: absolute;
+    top: -3vh;
+    width: 6.5vw;
+    height: 0.2vh;
+    background: white;
+    opacity: 0.35;
+}

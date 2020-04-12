@@ -1,0 +1,15 @@
+.Sidenav{
+    min-height: 100vh;
+    width: 25vw;
+    background-color: rgba(225, 34, 59, 0.05);
+    transform: translateX(-20vw);
+    animation: slide-right 0.5s ease-out;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-right{
+    from { transform: translateX(-20vw); }
+    to { transform: translateX(0vw); }
+}
+

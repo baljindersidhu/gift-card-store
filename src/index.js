@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './fonts.css';
 import App from './App';
+import 'remixicon/fonts/remixicon.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

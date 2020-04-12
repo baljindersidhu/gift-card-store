@@ -4,7 +4,7 @@ import './Sidenav.css';
 export default function Sidenav(){
 
     return(
-        <div className="Sidenav positionAbsolute">This is sidenav</div>
+        <div className="Sidenav positionAbsolute"></div>
     );
 
 }

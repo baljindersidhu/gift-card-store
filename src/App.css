@@ -1,23 +1,17 @@
-@font-face{
-  font-family: 'Overpass';
-  src: url(fonts/Overpass/Overpass-Regular.ttf);
-}
-
-@font-face{
-  font-family: 'Overpass Bold';
-  src: url(fonts/Overpass/Overpass-Bold.ttf);
-}
-
-@font-face{
-  font-family: 'Overpass Bolder';
-  src: url(fonts/Overpass/Overpass-Black.ttf);
-}
-
 .App{
-  font-family: 'Overpass', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   font-size: 1.9vh;
+
+  --app-theme-cololr: #e1223b;
+  --app-apple-gif-card-bg: #000000;
+  --app-netflix-gif-card-bg: #d10e16;
+  --app-amazon-gif-card-bg: #fe9901;
+  --app-placeholder-gif-card-bg: #05c7ef;
+  --app-grey-color: #b7b7b7;
+  --app-light-grey-color: #e6e7ee;
+
 }
 
 .positionRelative{
@@ -46,11 +40,11 @@
   flex-direction: column-reverse;
 }
 
-.row .centerV, .column .centerH{
+.row.centerV, .column.centerH{
   align-items: center;
 }
 
-.row .centerH, .column .centerV{
+.row.centerH, .column.centerV{
   justify-content: center;
 }
 
