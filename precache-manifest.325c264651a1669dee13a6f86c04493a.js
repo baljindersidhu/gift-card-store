@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7655156ea6560bd2a5a630f3fef25bff",
+    "revision": "5e42466237f52db0657ebc827679a1d7",
     "url": "/gift-card-store/index.html"
   },
   {
-    "revision": "de19487fa9ef1c9be416",
+    "revision": "f5dda3fc702d9547df26",
     "url": "/gift-card-store/static/css/2.5fc4d3ed.chunk.css"
   },
   {
-    "revision": "1ebb366c9fedefcb4213",
-    "url": "/gift-card-store/static/css/main.2bf0c191.chunk.css"
+    "revision": "a2b4a19c1a073c337a26",
+    "url": "/gift-card-store/static/css/main.bf7cf713.chunk.css"
   },
   {
-    "revision": "de19487fa9ef1c9be416",
-    "url": "/gift-card-store/static/js/2.cde0f132.chunk.js"
+    "revision": "f5dda3fc702d9547df26",
+    "url": "/gift-card-store/static/js/2.c2d0c4f0.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/gift-card-store/static/js/2.cde0f132.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/gift-card-store/static/js/2.c2d0c4f0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ebb366c9fedefcb4213",
-    "url": "/gift-card-store/static/js/main.5d421b78.chunk.js"
+    "revision": "a2b4a19c1a073c337a26",
+    "url": "/gift-card-store/static/js/main.a31db6fb.chunk.js"
   },
   {
     "revision": "69185332127e866822ef",
