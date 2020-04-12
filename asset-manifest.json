@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gift-card-store/static/css/main.1c851583.chunk.css",
+    "main.js": "/gift-card-store/static/js/main.a87446c6.chunk.js",
+    "main.js.map": "/gift-card-store/static/js/main.a87446c6.chunk.js.map",
+    "runtime-main.js": "/gift-card-store/static/js/runtime-main.d15eb605.js",
+    "runtime-main.js.map": "/gift-card-store/static/js/runtime-main.d15eb605.js.map",
+    "static/js/2.d7201d90.chunk.js": "/gift-card-store/static/js/2.d7201d90.chunk.js",
+    "static/js/2.d7201d90.chunk.js.map": "/gift-card-store/static/js/2.d7201d90.chunk.js.map",
+    "index.html": "/gift-card-store/index.html",
+    "precache-manifest.ad28f76ff7a44916a5abc61a9b4a0f52.js": "/gift-card-store/precache-manifest.ad28f76ff7a44916a5abc61a9b4a0f52.js",
+    "service-worker.js": "/gift-card-store/service-worker.js",
+    "static/css/main.1c851583.chunk.css.map": "/gift-card-store/static/css/main.1c851583.chunk.css.map",
+    "static/js/2.d7201d90.chunk.js.LICENSE.txt": "/gift-card-store/static/js/2.d7201d90.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/gift-card-store/static/media/Overpass-Regular.0807de33.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d15eb605.js",
+    "static/js/2.d7201d90.chunk.js",
+    "static/css/main.1c851583.chunk.css",
+    "static/js/main.a87446c6.chunk.js"
+  ]
+}
