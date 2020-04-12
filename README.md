@@ -1,4 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project template was used from [Dribbble](https://dribbble.com/shots/6843065-Gift-card-store-Mobile-app).
+
+## Template
+
+Gift card store - Mobile app by [Shojol Islam](https://dribbble.com/shojolislam) for [RonDesignLab](https://dribbble.com/RonDesignLab)
 
 ## Available Scripts
 

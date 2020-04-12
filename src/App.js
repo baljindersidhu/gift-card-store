@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
 
-import HomePage from './components/home-page/HomePage';
+import ApplicationRoutes from './routes/Routes';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export default class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <HomePage/>
+        <Router>
+            <ApplicationRoutes></ApplicationRoutes>
+        </Router>
       </div>
     )
   }

@@ -1,0 +1,119 @@
+.BuyCard .header{
+    font-weight: 600;
+    padding: 4vh 8vw;
+    padding-top: 8vh;
+}
+
+.BuyCard .header .heading{
+    font-size: 1.75vh;
+    text-shadow: 0px 0px 5px #c3bbbb;
+}
+
+.BuyCard .header i{
+    font-size: 2.25vh;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.BuyCard .GiftCard{
+    margin: 0vh 8vw;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.BuyCard .GiftCard[data-card-name="iTunes"]{
+    background-color: var(--app-apple-gif-card-bg);
+    box-shadow: 7px 12px 20px rgba(0, 0, 0, 0.18);
+}
+
+.BuyCard .GiftCard[data-card-name="Amazon"]{
+  background-color: var(--app-amazon-gif-card-bg);
+  box-shadow: 7px 12px 20px rgba(254, 153, 1, 0.18);
+}
+
+
+
+
+
+
+
+
+.Cart{
+    margin: 5vh 0vw;
+}
+
+.Cart .heading{
+    font-weight: 600;
+    font-size: 1.7vh;
+    color: var(--app-grey-color);
+    transform: rotateZ(-90deg);
+}
+
+.Cart .CartOptions .heading{
+    transform: rotateZ(0deg);
+    padding-bottom: 3vh;
+}
+
+.Cart .CartOptions .SelectCardCount{
+    margin-bottom: 4vh;
+}
+
+.Cart .CartOptions .SelectCardCount .button{
+    padding: 1vh 2.5vw;
+    border: 1px solid var(--app-light-grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5vh;
+}
+
+.Cart .CartOptions .SelectCardCount .amount{
+    font-size: 2.75vh;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #c3bbbb;
+    margin: 0vh 8vw;
+}
+
+.Cart .Stores{
+    height: 3vh;
+    margin-bottom: 4vh;
+}
+
+.Cart .CartSummary{
+    margin-top: 8vh;
+    padding-left: 8vw;
+}
+
+.Cart .CartSummary .heading{
+    transform: rotateZ(0deg);
+}
+
+.Cart .CartSummary .amount{
+    font-size: 2.75vh;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #c3bbbb;
+}
+
+.Cart .CartSummary .Button{
+    color: white;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #aba8a8;
+    text-align: center;
+    padding: 3vh 10vw;
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+}
+
+.Cart .CartSummary .Button[data-card="iTunes"]{
+    background-color: var(--app-apple-gif-card-bg);
+}
+
+.Cart .CartSummary .Button[data-card="Netflix"]{
+    background-color: var(--app-theme-cololr);
+}
+
+.Cart .CartSummary .Button[data-card="Amazon"]{
+    background-color: var(--app-amazon-gif-card-bg);
+}
+
+.Cart .CartSummary .Button[data-card="Prime"]{
+    background-color: var(--app-prime-gif-card-bg);
+}

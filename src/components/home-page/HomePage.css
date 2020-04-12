@@ -185,6 +185,51 @@
 
 
 
+.GiftCard{
+    padding: 3.5vh 9vw;
+    color: white;
+    background-color: var(--app-netflix-gif-card-bg);
+    border-radius: 1.25vh;
+    animation: fade-in 1.5s ease-in-out;
+    box-shadow: 7px 12px 20px #d10e162e;
+}
+
+.GiftCard .headerIcon{
+    font-size: 3vh;
+    margin-left: -1vw;
+}
+
+.GiftCard .label{
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #aba8a8;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+}
+
+.GiftCard .price{
+    opacity: 0.6;
+    font-size: 1.45vh;
+}
+
+.GiftCard .price::before{
+    content: '';
+    position: absolute;
+    top: -3vh;
+    width: 6.5vw;
+    height: 0.2vh;
+    background: white;
+    opacity: 0.35;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -200,41 +245,8 @@
     text-shadow: 0px 0px 5px #bfbdbd;
 }
 
-.BestSellerCard .Card{
+.BestSellerCard .GiftCard{
     margin-left: 32vw;
     margin-top: 3vh;
-    padding: 3.5vh 9vw;
-    color: white;
-    background-color: var(--app-netflix-gif-card-bg);
     width: 60vw;
-    border-radius: 1.25vh;
-    animation: fade-in 1.5s ease-in-out;
-    box-shadow: 7px 12px 20px #d10e162e;
-}
-
-.BestSellerCard .Card .headerIcon{
-    font-size: 3vh;
-    margin-left: -1vw;
-}
-
-.BestSellerCard .Card .label{
-    font-weight: 600;
-    text-shadow: 0px 0px 5px #aba8a8;
-    margin-top: 6vh;
-    margin-bottom: 5vh;
-}
-
-.BestSellerCard .Card .price{
-    opacity: 0.6;
-    font-size: 1.45vh;
-}
-
-.BestSellerCard .Card .price::before{
-    content: '';
-    position: absolute;
-    top: -3vh;
-    width: 6.5vw;
-    height: 0.2vh;
-    background: white;
-    opacity: 0.35;
 }

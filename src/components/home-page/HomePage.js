@@ -4,21 +4,29 @@ import './HomePage.css';
 import Sidenav from '../sidenav/Sidenav';
 import GiftCardService from '../../services/GiftCardService';
 import SidenavActionsService from '../../services/SidenavActionsService';
+import NavigationService from '../../services/NavigationService';
 
-export default function HomePage(){
-    return (
-        <React.Fragment>
-            <Sidenav />
-            <div className="HomePage">
-                <PageHeader heading="Gift cards" />
-                <GiftCardGallery />
-                <div className="row">
-                    <SidenavActions />
-                    <BestSellerCard card={GiftCardService.getNetflixCard()} />
+export default class HomePage extends React.Component{
+    
+    componentDidMount(){
+        NavigationService.setRouteInfo(this.props);
+    }
+
+    render(){
+        return (
+            <React.Fragment>
+                <Sidenav />
+                <div className="HomePage">
+                    <PageHeader heading="Gift cards" />
+                    <GiftCardGallery />
+                    <div className="row">
+                        <SidenavActions />
+                        <BestSellerCard card={GiftCardService.getNetflixCard()} />
+                    </div>
                 </div>
-            </div>
-        </React.Fragment>
-    )
+            </React.Fragment>
+        )
+    }
 }
 
 class PageHeader extends React.Component{
@@ -45,9 +53,14 @@ class PageHeader extends React.Component{
 
 function GiftCardGallery(){
 
+    function buyCard(cardName){
+        NavigationService.navigateToBuyCard(cardName.label);
+    }
+
     function getCard(bgIcon, avatarIcon, label, price){
         return (
-            <div className="Card column centerH positionRelatve" key={performance.now()}>
+            <div className="Card column centerH positionRelatve" 
+                key={performance.now()} onClick={() => buyCard({label})}>
                 {/* <div className="positionAbsolute">
                     <img src="logos/apple.svg" alt="brand-icon" aria-label="brand icon of gift card"/>
                 </div> */}
@@ -132,16 +145,25 @@ class SidenavActions extends React.Component{
 
 class BestSellerCard extends React.Component{
     render(){
-        let card = this.props.card;
         return(
             <div className="BestSellerCard positionRelative">
                 <div className="heading">Best seller</div>
-                <div className="Card positionRelative">
-                    <div className="headerIcon"><i className={card.headerIcon}></i></div>
-                    <div className="label">{card.label}</div>
-                    <div className="price positionRelative">{card.getPriceRange()}</div>
-                </div>
+                <ExpandedGiftCard card={this.props.card} />
             </div>
         )
     }
 }
+
+export class ExpandedGiftCard extends React.Component{
+    render(){
+        let card = this.props.card;
+        
+        return (
+            <div className="GiftCard positionRelative" data-card-name={card.label}>
+                <div className="headerIcon"><i className={card.headerIcon}></i></div>
+                <div className="label">{card.label}</div>
+                <div className="price positionRelative">{card.getPriceRange()}</div>
+            </div>
+        );
+    }
+} 

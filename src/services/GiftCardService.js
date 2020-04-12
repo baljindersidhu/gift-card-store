@@ -26,7 +26,7 @@ class GiftCardService{
 
     getAppleCard(){
         return new GiftCard(
-            "/logos/apple.svg", "ri-aplle-fill",
+            "/logos/apple.svg", "ri-apple-fill",
             "iTunes", "100", "10", "100"
         );
     }
@@ -50,6 +50,18 @@ class GiftCardService{
             "/logos/amazon.svg", "ri-amazon-fill",
             "Amazon", "100", "10", "100"
         );
+    }
+
+    getCard(cardName){
+        if(cardName === 'iTunes'){
+            return this.getAppleCard()
+        }else if(cardName === 'Netflix'){
+            return this.getNetflixCard()
+        }else if(cardName === 'Amazon'){
+            return this.getAmazonCard()
+        }else if(cardName === 'Prime'){
+            return this.getPrimeNowCard()
+        }
     }
 
 }
